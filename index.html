@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate Camp</title>
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="logo1.png" alt="Donate Camp Logo" class="logo" />
+      <ul class="nav-links">
+        <li><a href="#home"onfocus="highlightLink(this)" onblur="removeHighlight(this)">Home</a></li>
+        <li><a href="#about"onfocus="highlightLink(this)" onblur="removeHighlight(this)">About</a></li>
+        <li><a href="#donate"onfocus="highlightLink(this)" onblur="removeHighlight(this)">Donate</a></li>
+        <li><a href="#contact"onfocus="highlightLink(this)" onblur="removeHighlight(this)">Contact</a></li>
+      </ul>
+    </nav>
+  </header> 
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Support Our Donation Camp</h1>
+      <p>Join us in making a difference in the lives of those who need it most. Your small act of kindness can create big change.</p>
+      <section class="image-section">
+        <img src="donate.jpg" alt="DonateCamp "  class="donate-img" />
+      </section>
+      <a href="#donate" class="btn">Donate Now</a>
+      <a href="#contact" class="btn">Contact US</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About the Camp</h2>
+    <p>Our donation camp is a humanitarian initiative aimed at providing critical support to underserved communities. We partner with local NGOs and volunteers to distribute food, medical aid, clothing, and educational materials to families and individuals in need.</p>
+  </section>
+
+
+  <section id="donate" class="section">
+    <h2>Make a Donation</h2>
+    <form class="donation-form" onsubmit="handleSubmit(event)">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" name="Email" placeholder="Your email" required  aria-label="Email">
+
+      <label for="amount">Donation Amount (₹):</label>
+      <input type="number" id="amount" name="amount" required min="1" />
+
+      <label for="message">Message (optional):</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit" class="btn"aria-label="Donate Now Button">Donate</button>
+      
+    </form>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Email: donatecamp@example.com</p>
+    <p>Phone: +91-9876543210</p>
+    <p>Address: 123 Community Drive, New Delhi, India</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Donate Camp. All rights reserved.</p>
+    <p><a href="#" style="color: #fff; text-decoration: underline;">Privacy Policy</a> | <a href="#" style="color: #fff; text-decoration: underline;">Terms of Service</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
